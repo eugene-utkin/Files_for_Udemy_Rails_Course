@@ -6,7 +6,7 @@ users = [
           { username: "heisenberg", password: "password5" }
         ]
 
-number_of_attempts = 0
+login_success = false
 
 puts 'Welcome to the authenticator'
 20.times { print "-" }
@@ -17,10 +17,12 @@ username = gets.chomp
 print 'Password: '
 password = gets.chomp
 
-if number_of_attempts < 4
-  users.each do |user|
-    if username == user[:username]
-      puts "Fuck yeah"
-    end
+users.each do |user|
+  if username == user[:username] && password == user[:password]
+    login_success = true
   end
+end
+
+if login_success == true
+  
 end
