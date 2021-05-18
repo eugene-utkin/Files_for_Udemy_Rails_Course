@@ -7,18 +7,32 @@ users = [
         ]
 
 user_info = {}
+login_success = false
 
 puts 'Welcome to the authenticator'
-20.times { print "-" }
-puts
-puts 'This program will take input from the user and compare password'
-print 'Username: '
-user_info[:username] = gets.chomp
-print 'Password: '
-user_info[:password] = gets.chomp
-
-users.each do |user|
-  if user == user_info
+3.times do |i|
+  if login_success == false && i < 3
+    20.times { print "-" }
+    puts
+    puts 'This program will take input from the user and compare password'
+    print 'Username: '
+    user_info[:username] = gets.chomp
+    print 'Password: '
+    user_info[:password] = gets.chomp
     puts user_info
+
+    users.each do |user|
+      if user == user_info
+        login_success = true
+      end
+    end
+
+  if login_success == false
+    puts "Credentials were not correct"
+    puts "Press n to quit or any other key to continue"
+    user_choice = gets.chomp
+    if user_choice != "n"
+      i += 1
+    end
   end
 end
