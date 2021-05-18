@@ -8,10 +8,11 @@ users = [
 
 user_info = {}
 login_success = false
+user_exit = false
 
 puts 'Welcome to the authenticator'
 3.times do |i|
-  if login_success == false && i < 3
+  if login_success == false && user_exit == false
     20.times { print "-" }
     puts
     puts 'This program will take input from the user and compare password'
@@ -27,12 +28,17 @@ puts 'Welcome to the authenticator'
       end
     end
 
-  if login_success == false
-    puts "Credentials were not correct"
-    puts "Press n to quit or any other key to continue"
-    user_choice = gets.chomp
-    if user_choice != "n"
-      i += 1
+    if login_success == false
+      puts "Credentials were not correct"
+      puts "Press n to quit or any other key to continue"
+      user_choice = gets.chomp
+      if user_choice == "n"
+        user_exit = true
+      else
+        if i == 2
+          puts "You have exceeded the number of attempts"
+        end
+      end
     end
   end
 end
