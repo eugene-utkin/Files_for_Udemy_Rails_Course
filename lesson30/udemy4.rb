@@ -20,7 +20,7 @@ puts 'Welcome to the authenticator'
     user_info[:username] = gets.chomp
     print 'Password: '
     user_info[:password] = gets.chomp
-    puts user_info
+    
 
     users.each do |user|
       if user == user_info
@@ -30,16 +30,17 @@ puts 'Welcome to the authenticator'
 
     if login_success == false
       puts "Credentials were not correct"
-      if i == 2
-        puts "You have exceeded the number of attempts"
-      else
-        puts "Press n to quit or any other key to continue"
-        user_choice = gets.chomp
-        if user_choice == "n"
-          user_exit = true
-        else
+    else
+      puts user_info
+    end
 
-        end
+    if i == 2
+      puts "You have exceeded the number of attempts"
+    else
+      puts "Press n to quit or any other key to continue"
+      user_choice = gets.chomp
+      if user_choice == "n"
+        user_exit = true
       end
     end
   end
