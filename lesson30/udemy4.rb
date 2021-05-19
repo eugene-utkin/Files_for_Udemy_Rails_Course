@@ -30,13 +30,15 @@ puts 'Welcome to the authenticator'
 
     if login_success == false
       puts "Credentials were not correct"
-      puts "Press n to quit or any other key to continue"
-      user_choice = gets.chomp
-      if user_choice == "n"
-        user_exit = true
+      if i == 2
+        puts "You have exceeded the number of attempts"
       else
-        if i == 2
-          puts "You have exceeded the number of attempts"
+        puts "Press n to quit or any other key to continue"
+        user_choice = gets.chomp
+        if user_choice == "n"
+          user_exit = true
+        else
+
         end
       end
     end
