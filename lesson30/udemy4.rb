@@ -12,7 +12,7 @@ user_exit = false
 
 puts 'Welcome to the authenticator'
 3.times do |i|
-  if login_success == false && user_exit == false
+  if user_exit == false
     20.times { print "-" }
     puts
     puts 'This program will take input from the user and compare password'
@@ -34,11 +34,10 @@ puts 'Welcome to the authenticator'
       puts user_info
     end
 
-    puts "Press n to quit or any other key to continue"
-
     if i == 2
       puts "You have exceeded the number of attempts"
     else
+      puts "Press n to quit or any other key to continue"
       user_choice = gets.chomp
       if user_choice == "n"
         user_exit = true
