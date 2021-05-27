@@ -13,9 +13,10 @@ dial_book = {
  
 # Get city names from the hash
 def get_city_names(somehash)
-# Write code here
+  puts 'Which city do you want the area code for?'
+  puts somehash.keys
 end
- 
+
 # Get area code based on given hash and key
 def get_area_code(somehash, key)
 # Write code here
@@ -26,4 +27,6 @@ loop do
   puts 'Do you want to lookup an area code based on a city name?(Y/N)'
   answer = gets.chomp.downcase
   break if answer != "y"
+  get_city_names(dial_book)
+  puts 'Enter your selection'
 end
