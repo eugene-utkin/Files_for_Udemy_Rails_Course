@@ -20,7 +20,7 @@ end
 # Get area code based on given hash and key
 def get_area_code(code_book, city)
   if code_book.has_key? city
-    puts "Test"
+    puts "The area code for #{city} is #{code_book[city]}"
   end
 end
  
