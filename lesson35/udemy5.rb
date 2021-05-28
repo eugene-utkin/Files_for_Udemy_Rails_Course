@@ -29,4 +29,6 @@ loop do
   break if answer != "y"
   get_city_names(dial_book)
   puts 'Enter your selection'
+  entered_code = gets.chomp.downcase
+  get_area_code(dial_book, entered_code)
 end
