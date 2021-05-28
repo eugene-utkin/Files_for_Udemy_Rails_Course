@@ -12,14 +12,16 @@ dial_book = {
 }
  
 # Get city names from the hash
-def get_city_names(somehash)
+def get_city_names(code_book)
   puts 'Which city do you want the area code for?'
-  puts somehash.keys
+  puts code_book.keys
 end
 
 # Get area code based on given hash and key
-def get_area_code(somehash, key)
-# Write code here
+def get_area_code(code_book, city)
+  if code_book.has_key? city
+    puts "Test"
+  end
 end
  
 # Execution flow
