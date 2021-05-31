@@ -21,6 +21,8 @@ end
 def get_area_code(code_book, city)
   if code_book.has_key? city
     puts "The area code for #{city} is #{code_book[city]}"
+  else
+    puts "#{city}? There is no such city in a database."
   end
 end
  
