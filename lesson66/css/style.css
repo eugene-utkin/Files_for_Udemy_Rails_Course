@@ -5,3 +5,7 @@ body {
 h1, ul {
   color: #1c1d1f;
 }
+
+li {
+  list-style-type: square;
+}
