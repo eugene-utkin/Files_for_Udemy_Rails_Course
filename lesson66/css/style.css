@@ -2,10 +2,6 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
-h1 {
+h1, ul {
   color: #1c1d1f;
-}
-
-ul {
-	color: #1c1d1f;
 }
