@@ -14,3 +14,7 @@ li {
 	color: orange;
 	font-weight: bold;
 }
+
+p em {
+  color: rebeccapurple;
+}
