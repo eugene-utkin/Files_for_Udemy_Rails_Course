@@ -12,8 +12,8 @@
   <tbody>
     <% @articles.each do |article| %>
       <tr>
-        <td>Some title</td>
-        <td>Some description</td>
+        <td><%= article.title %></td>
+        <td><%= article.description %></td>
         <td>Placeholder</td>
       </tr>
     <% end %>
