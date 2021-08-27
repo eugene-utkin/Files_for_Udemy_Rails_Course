@@ -13,4 +13,8 @@ class ArticlesController < ApplicationController
 
   end
 
+  def create
+
+  end
+
 end
