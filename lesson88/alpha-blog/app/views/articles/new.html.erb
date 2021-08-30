@@ -2,4 +2,9 @@
 
 <%= form_with scope: :article, url: articles_path, local: true do |f| %>
 
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </p>
+
 <% end %>
