@@ -3,12 +3,12 @@
 <%= form_with scope: :article, url: articles_path, local: true do |f| %>
 
   <p>
-    <%= f.label :title %>
+    <%= f.label :title %><br/>
     <%= f.text_field :title %>
   </p>
 
     <p>
-      <%= f.label :desctiprion %>
+      <%= f.label :desctiprion %><br/>
       <%= f.text_area :description %>
     </p>
 <% end %>
