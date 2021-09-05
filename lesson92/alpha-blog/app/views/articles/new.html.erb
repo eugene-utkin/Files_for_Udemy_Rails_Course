@@ -1,7 +1,9 @@
 <h1>Create a new article</h1>
 
 <% if @articles.errors.any? %>
-
+  <% @article.errors.full_messages.each do |msg| %>
+    <%= msg %>
+  <% end %>
 <% end %>
 
 <%= form_with scope: :article, url: articles_path, local: true do |f| %>
