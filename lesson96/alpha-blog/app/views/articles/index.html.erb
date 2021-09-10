@@ -14,7 +14,7 @@
       <tr>
         <td><%= article.title %></td>
         <td><%= article.description %></td>
-        <td><%= link_to 'Delete', '#' %></td>
+        <td><%= link_to 'Delete', article_path(article) %></td>
       </tr>
     <% end %>
   </tbody>
