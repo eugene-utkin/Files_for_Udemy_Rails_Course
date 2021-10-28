@@ -10,7 +10,7 @@
               by Mashrur Hossain
             </div>
             <div class="card-body">
-              <h5 class="card-title"><%= article.title %></h5>
+              <h5 class="card-title"><%= link_to article.title, article_path(article), class: "text-success" %></h5>
               <p class="card-text"><%= article.description %></p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
