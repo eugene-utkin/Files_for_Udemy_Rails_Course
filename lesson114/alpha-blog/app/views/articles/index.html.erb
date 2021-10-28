@@ -1,27 +1,30 @@
-<h1 class="text-center mt-4">Listing all articles</h1>
+<div id="page-content">
+  <h1 class="text-center mt-4">Listing all articles</h1>
 
-<div class="container">
-  <% @articles.each do |article| %>
-    <div class="row justify-content-md-center">
-      <div class="col-8 mt-4">
-        <div class="card text-center">
-          <div class="card-header">
-            Featured
-          </div>
-          <div class="card-body">
-            <h5 class="card-title"><%= article.title %></h5>
-            <p class="card-text"><%= article.description %></p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-          <div class="card-footer text-muted">
-            2 days ago
+  <div class="container">
+    <% @articles.each do |article| %>
+      <div class="row justify-content-md-center">
+        <div class="col-8 mt-4">
+          <div class="card text-center">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><%= article.title %></h5>
+              <p class="card-text"><%= article.description %></p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="card-footer text-muted">
+              2 days ago
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  <% end %>
-</div>
+    <% end %>
+  </div>
 
-<p>
-  <%= link_to 'Create new article', new_article_path %>
-</p>
+  <p>
+    <%= link_to 'Create new article', new_article_path %>
+  </p>
+
+</div>
