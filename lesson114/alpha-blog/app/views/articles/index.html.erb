@@ -17,8 +17,8 @@
               <%= link_to "Delete", article_path(article), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-outline-danger" %>
             </div>
             <div class="card-footer text-muted">
-              <small>Created ago,
-                edited ago</small>
+              <small>Created <%= article.created_at %> ago,
+                edited <%= article.updated_at %> ago</small>
             </div>
           </div>
         </div>
