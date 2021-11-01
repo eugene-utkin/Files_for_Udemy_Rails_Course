@@ -9,10 +9,10 @@
 
 <%= form_with(model: @article, local: true) do |f| %>
 
-  <p>
+  <div class="form-group row">
     <%= f.label :title %><br/>
     <%= f.text_field :title %>
-  </p>
+  </div>
 
   <p>
     <%= f.label :description %><br/>
