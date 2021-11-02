@@ -12,14 +12,14 @@
   <div class="form-group row">
     <%= f.label :title, class: "col-2 col-form-label" %>
     <div class="col-10">
-      <%= f.text_field :title %>
+      <%= f.text_field :title, class: "form-control" %>
     </div>
   </div>
 
-  <p>
+  <div class="form-group row">
     <%= f.label :description %><br/>
     <%= f.text_area :description %>
-  </p>
+  </div>
 
   <p>
     <%= f.submit %>
