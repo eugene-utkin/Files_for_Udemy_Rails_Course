@@ -1,11 +1,11 @@
 <% if @article.errors.any? %>
   <div class="alert alert-danger" role="alert">
     <h4 class="alert-heading">Well done!</h4>
+    <ul>
+      <% @article.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
   </div>
   <h2>The following errors prevented the article from being saved</h2>
-  <ul>
-    <% @article.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-    <% end %>
-  </ul>
 <% end %>
