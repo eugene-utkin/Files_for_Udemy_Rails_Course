@@ -11,7 +11,7 @@
           <div class="card-body">
             <h5 class="card-title"><%= link_to gravatar_for(user, size: 150), user %></h5>
             <p class="card-text"><%= pluralize(user.articles.count, "article") %></p>
-            <%= link_to "View", article_path(article), class: "btn btn-outline-success" %>
+            <%= link_to "View profile", article_path(article), class: "btn btn-outline-success" %>
             <%= link_to "Edit", edit_article_path(article), class: "btn btn-outline-info" %>
             <%= link_to "Delete", article_path(article), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-outline-danger" %>
           </div>
