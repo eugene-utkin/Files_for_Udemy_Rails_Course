@@ -51,7 +51,9 @@ body {
   padding: 0.3em;
   cursor: default; }
   .flickr_pagination a, .flickr_pagination span, .flickr_pagination em {
-    padding: 0.2em 0.5em; }
+    padding: 0.2em 0.5em;
+    border-radius: 5px;
+  }
   .flickr_pagination .disabled {
     color: #aaaaaa; }
   .flickr_pagination .current {
@@ -59,7 +61,7 @@ body {
     font-weight: bold;
     color: #ff0084; }
   .flickr_pagination a {
-    border: 1px solid #dddddd;
+    border: 1px solid whitesmoke;
     color: #0063dc;
     text-decoration: none; }
     .flickr_pagination a:hover, .flickr_pagination a:focus {
