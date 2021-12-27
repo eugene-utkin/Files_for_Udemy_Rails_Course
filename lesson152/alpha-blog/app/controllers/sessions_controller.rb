@@ -4,9 +4,10 @@ class SessionsController < ApplicationController
   end
 
   def create
+    byebug
   end
 
   def destroy
   end
-  
+
 end
