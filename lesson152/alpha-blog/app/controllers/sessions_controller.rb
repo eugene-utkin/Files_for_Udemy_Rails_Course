@@ -8,6 +8,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
 
     else
+      flash.now
       render 'new'
     end
   end
