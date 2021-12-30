@@ -13,6 +13,6 @@ module ApplicationHelper
   end
 
   def logged_in?
-
+    !!current_user
   end
 end
