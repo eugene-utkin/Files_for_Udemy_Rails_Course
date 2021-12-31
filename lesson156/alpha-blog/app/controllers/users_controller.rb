@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user
+  before_action :set_user, only: [:show]
 
   def show
     @articles = @user.articles.paginate(page: params[:page], per_page: 5)
