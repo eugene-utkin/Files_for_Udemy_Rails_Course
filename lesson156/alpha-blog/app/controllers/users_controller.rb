@@ -2,7 +2,6 @@ class UsersController < ApplicationController
   before_action :set_user
 
   def show
-    @user = User.find(params[:id])
     @articles = @user.articles.paginate(page: params[:page], per_page: 5)
   end
 
