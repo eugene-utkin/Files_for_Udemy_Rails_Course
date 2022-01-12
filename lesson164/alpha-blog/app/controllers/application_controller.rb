@@ -10,4 +10,8 @@ class ApplicationController < ActionController::Base
       !!current_user
     end
 
+    def require_user
+
+    end
+
 end
