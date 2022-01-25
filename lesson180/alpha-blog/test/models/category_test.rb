@@ -7,4 +7,20 @@
       assert @category.valid?
     end
 
+    test "name should be present" do
+
+    end
+
+    test "name should be unique" do
+
+    end
+
+    test "name should not be too long" do
+
+    end
+
+    test "name should not be too short" do
+
+    end
+
   end
