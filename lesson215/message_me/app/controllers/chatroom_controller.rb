@@ -1,4 +1,4 @@
-class ChatroomController < ActionController::Base
+class ChatroomController < ApplicationController
 
   def index
 
