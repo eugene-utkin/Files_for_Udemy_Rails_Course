@@ -15,7 +15,7 @@ class StocksController < ApplicationController
       end
     else
       respond_to do |format|
-        flash[:alert] = "Please enter a valid symbol to search"
+        flash[:alert] = "Please enter a symbol to search"
         format.js { render partial: 'users/result' }
       end
     end
