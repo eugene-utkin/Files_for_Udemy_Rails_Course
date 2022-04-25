@@ -9,7 +9,6 @@ class UsersController < ApplicationController
   end
 
   def search
-    render json: params[:friend]
     if params[:friend].present?
       @friend = params[:friend]
       if @friend
