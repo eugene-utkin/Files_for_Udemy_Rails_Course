@@ -1,4 +1,4 @@
-<% if @student.error.any? %>
+<% if @student.errors.any? %>
   <ul>
     <% @student.errors.full_messages.each do |message| %>
       <li><%= message %></li>
