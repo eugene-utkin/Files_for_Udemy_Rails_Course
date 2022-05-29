@@ -13,8 +13,8 @@
           <p><%= course.description %></p>
         </div>
         <div class="card-action">
-          <% if logged_in? %>
-            <a href="#">Enroll</a>
+          <% if logged_in? && !(current_user.courses.include?(course)) %>
+            <%= link_to "Enroll", "#" %>
           <% end %>
           <a href="#">Info</a>
         </div>
