@@ -8,7 +8,11 @@
           <% if @student.courses.empty? %>
             None
           <% else %>
-
+            <ul>
+              <% @student.courses.each do |course| %>
+                <%= course.name %>
+              <% end %>
+            </ul>
           <% end %>
         </p>
       </div>
